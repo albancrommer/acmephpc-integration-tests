@@ -1,0 +1,38 @@
+{
+    "name": "octopuce/acmecli",
+    "version": "0.1",
+    "description": "ACME X509 Certificate Protocol API Client in PHP",
+    "keywords": [
+        "ACME", "CA", "JWS"
+    ],
+    "homepage": "https://github.com/octopuce/acmephpc-integration-tests",
+    "license": "LGPLv2+",
+    "type": "testing",
+    "authors": [
+        {
+            "name": "Benjamin Sonntag",
+            "email": "benjamin@octopuce.fr",
+            "homepage": "https://www.octopuce.fr/"
+        }
+    ],
+    "require": {
+        "octopuce/acmephpc": "dev-master",
+        "phpunit/phpunit": "4.*",
+        "symfony/console": "*",
+        "symfony/yaml": "*",
+        "phpunit/dbunit": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Octopuce\\Acme\\IntegrationTests\\": "tests/src/Octopuce/Acme/IntegrationTests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/octopuce/acmephpc"
+        }
+    ],
+    "minimum-stability": "dev"
+
+}
